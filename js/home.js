@@ -47,6 +47,13 @@ let loginIndex = JSON.parse(localStorage.getItem("loginIndex")),
 
 
     function addTask(){
+        if(!task.value){
+            Swal.fire({
+                icon: "error",
+                title: "Empty Task",
+            });
+            return 0;
+        }
         let now = new Date() 
         let time = new Date(deadline.value)
         if(time > now){
