@@ -23,7 +23,11 @@ function login(){
         if (users[i].email == email.value){
             if(users[i].password == password.value){
             localStorage.setItem("loginIndex",JSON.stringify(i))
-            loginbtn.setAttribute("href","home.html")
+            if (window.location.pathname == "/ToDoList/" || window.location.pathname == "/ToDoList/index.html") {
+                window.location.pathname = "/ToDoList/home.html"
+            }else{
+                window.location.pathname = "home.html"
+            }
             } else {
                 Swal.fire({
                     icon: "error",

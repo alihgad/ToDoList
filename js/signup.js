@@ -128,7 +128,11 @@ function sign(){
     users.push(user)
 
     localStorage.setItem("users",JSON.stringify(users))
-    signup.setAttribute("href","index.html")  
+    if (window.location.pathname == "/ToDoList/signup.html") {
+        window.location.pathname = "/ToDoList/index.html"
+    }else{
+        window.location.pathname = "index.html"
+    }
         
     }else{
         Swal.fire({
