@@ -11,7 +11,8 @@ function login(){
             icon: "error",
             title: "Oops...",
             text: " there is no data",
-            footer : `please <a href="signup.html">sign up</a>`
+            footer : `please <a href="signup.html">sign up</a>`,
+            showCloseButton: true
         });
     }
 
@@ -27,7 +28,9 @@ function login(){
                 Swal.fire({
                     icon: "error",
                     title: "Oops...",
-                    text: "password is incorrect",
+                    text: "password is incorrect"
+                    ,
+            showCloseButton: true
                 });
             }
         } else{
@@ -79,6 +82,8 @@ document.querySelector("#toogle").addEventListener("click",function(e){
         e.target.classList.replace("fa-eye","fa-eye-slash")
     }else{
         document.querySelector("#password").setAttribute("type","password")
+        e.target.classList.replace("fa-eye-slash","fa-eye")
+
     }
 })
 

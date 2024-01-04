@@ -128,11 +128,16 @@ function sign(){
     users.push(user)
 
     localStorage.setItem("users",JSON.stringify(users))
-    signup.setAttribute("href","index.html")
-
-
+    signup.setAttribute("href","index.html")  
         
-        
+    }else{
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: " Wrong data",
+            footer : `please check your data again`,
+            showCloseButton: true
+        });
     }
 
     
@@ -151,9 +156,17 @@ document.querySelector("#toogle").addEventListener("click",function(e){
         e.target.classList.replace("fa-eye","fa-eye-slash")
     }else{
         document.querySelector("#password").setAttribute("type","password")
+        e.target.classList.replace("fa-eye-slash","fa-eye")
+
     }
 })
 
+document.addEventListener("keypress",function(e){
+    if(e.key == 'Enter'){
+        e.preventDefault()
+        sign()
+    };
+})
 
 
 
