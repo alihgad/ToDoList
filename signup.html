@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="bg-dark bg-opacity-50 d-flex justify-content-center align-items-center vh-100">
+   
+    <div class="container bg-white  px-5 py-5 rounded-4 card ">
+
+      <h1 class="text-center mb-5">Sign up</h1>
+      <div class="form-floating mb-1 ">
+        <input
+        type="text"
+        class="form-control border-black shadow-none "
+        name="userName"
+        id="userName"
+        placeholder=""
+        aria-describedby="userNameHelp"
+        />
+        <label for="userName">User Name</label>
+        <small id="userNameHelp" class="form-text text-danger opacity-0 ">
+          <i class="fa-solid fa-warning "></i>
+          <i class="fa-solid ">Invalid user name length must be (5-12)</i>
+        </small>
+      </div>
+
+      <div class="form-floating mb-1 ">
+        <input
+        type="email"
+        class="form-control border-black shadow-none "
+        name="email"
+        id="email"
+        aria-describedby="emailHelp"
+        placeholder=""
+
+        />
+        <label for="userName">Email</label>
+        <small id="emailHelp" class="form-text text-danger opacity-0 ">
+          <i class="fa-solid fa-warning "></i>
+          <i class="fa-solid " id="emailtext">Invalid Email</i>
+        </small>
+      </div>
+
+      <div class="form-floating mb-1 ">
+        <input
+          type="password"
+          class="form-control border-black shadow-none "
+          name="password"
+          id="password"
+          placeholder=""
+          aria-describedby="passwordHelp"
+        />
+        <label for="password">Password</label>
+        <i id="toogle" class="fa-solid fa-eye position-absolute eyeup eye"></i>
+
+        <small id="passwordHelp" class="form-text text-danger opacity-0">
+          <i class="fa-solid fa-warning "></i>
+          <i class="fa-solid ">Invalid Password must contain number</i>
+        </small>
+      </div>
+      
+      <div class="">
+        <a id="signup"  class="btn btn-primary  log-in w-100 py-2 mb-3">
+          Sign up
+        </a>
+      </div>
+
+      <p class="text-center m-0">
+        alerdy have an account ? <a href="index.html">sign in</a>
+      </p>
+      
+    </div>  
+
+  </div>
+
+
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/signup.js"></script>
+</body>
+</html>

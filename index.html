@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.1/dist/sweetalert2.min.css">
+
+</head>
+<body>
+
+  <div class="bg-dark bg-opacity-50 d-flex justify-content-center align-items-center vh-100">
+   
+    <div class="container bg-white card px-5 py-5 rounded-4 ">
+
+      <h1 class="text-center mb-5">Log in</h1>
+      <div class="form-floating ">
+        <input
+        type="email"
+        class="form-control  shadow-none "
+        name="email"
+        id="email"
+        aria-describedby="emailHelp"
+        placeholder=""
+        />
+        <label for="email">E-mail</label>
+        <small id="emailHelp" class="form-text text-danger opacity-0 ">
+          <i class="fa-solid fa-warning "></i>
+          <i class="fa-solid " id="emailtext">Invalid Email</i>
+        </small>
+      </div>
+
+      <div class="form-floating mb-3 position-relative ">
+        <input
+          type="password"
+          class="form-control  shadow-none mb-3 "
+          name="password"
+          id="password"
+          placeholder=""
+        />
+        <label for="password">Password</label>
+        <i id="toogle" class="fa-solid fa-eye position-absolute eye"></i>
+  
+      </div>
+      
+      <div class="">
+        <a id="login" class="btn btn-primary  log-in w-100 py-2 mb-3">
+          Log in
+        </a>
+      </div>
+
+      <p class="text-center m-0">
+        dont have account yet ? <a href="signup.html">sign up</a>
+      </p>
+      
+    </div>  
+
+  </div>
+
+
+  
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.1/dist/sweetalert2.all.min.js"></script>
+  
+
+</body>
+</html>
