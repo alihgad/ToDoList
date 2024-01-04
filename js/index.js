@@ -89,7 +89,12 @@ document.querySelector("#toogle").addEventListener("click",function(e){
 
 
 
-
+document.addEventListener("keypress",function(e){
+    if(e.key == 'Enter'){
+        e.preventDefault()
+        login()
+    };
+})
 
 
 
