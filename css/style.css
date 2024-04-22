@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-color: tan;
 }
@@ -67,4 +68,67 @@ label{
     .w-75-mobile{
         width: 75% !important;
     }
+=======
+body{
+    background-color: tan;
+}
+
+nav , .list , #table{
+    background-color: rgb(223, 209, 196);
+}
+#userNameHelp ,#passwordHelp {
+    letter-spacing: 1.5px;
+    font-size: 0.65rem;
+}
+
+
+
+label{
+    color: #555 ;
+}
+
+#email,#name,#password , #task , #deadLine {
+    border-color: black;
+}
+.profile h6::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    border-right: 1px black solid;
+    top: 0%;
+}
+
+.eye{
+    top: 25%;
+    right: -30px;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.eyeup{
+    top:25% ;
+}
+
+.card{
+    width: 35%;
+}
+
+@media screen and (max-width:1200px) {
+    .card{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .card{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card{
+        width: 75%;
+    }
+>>>>>>> d1d4a622978933f461450e169c904378c340cd4c
 }
