@@ -18,7 +18,6 @@ function login(){
 
     for (let i = 0; i < users.length; i++) {
 
-        
 
         if (users[i].email == email.value){
             if(users[i].password == password.value){
@@ -38,7 +37,13 @@ function login(){
                 });
             }
         } else{
-            document.getElementById("emailHelp").classList.replace("opacity-0","opacity-100")
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: " there is no data",
+                footer : `please <a href="signup.html">sign up</a>`,
+                showCloseButton: true
+            });
             
         }
     }

@@ -26,23 +26,32 @@ let loginIndex = JSON.parse(localStorage.getItem("loginIndex")),
 
             let now = (new Date())
             let time = (new Date(arr[i].deadline))
-            let days = Math.floor((time-now)/60000/60/24)
-            let hours = Math.floor((time-now)/60000/60 - days *24 )
-            let munites = Math.floor((time-now)/60000 - days *24 *60 -hours *60) 
+            let deff = time - now
+            let days = Math.floor(deff/1000/60/60/24)
+            let hours = Math.floor(deff/1000/60/60-days*24)
+            let minutes = Math.floor(deff/1000/60-hours*60-days*24*60)
              cartona += `<tr>
             <td>${arr[i].task}</td>
-            <td>${days} days ${hours} hours and ${munites} munites </td>
+            <td>${days} days ${hours} hours and ${minutes} minutes </td>
             <td><div class="btn btn-success" onclick = "deleteing(${i})">Done <i class="fa-solid fa-check-square fa-xl"></i></div></td>
           </tr>
             `
+            console.log(minutes);
         }
+    
+
+
+
+       
 
         document.getElementById("tbody").innerHTML = cartona
 
     }
 
-    
-    let now = new Date() 
+
+
+       
+
 
 
 
