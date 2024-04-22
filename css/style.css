@@ -57,6 +57,14 @@ label{
 
 @media screen and (max-width:768px) {
     .card{
-        width: 75%;
+        width: 95%;
+    }
+
+    .w-50-mobile{
+        width: 50% !important;
+    }
+
+    .w-75-mobile{
+        width: 75% !important;
     }
 }
